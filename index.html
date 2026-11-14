@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live.City — The World's Cities, Live: Time, Weather, Air Quality, News & Cams</title>
+<meta name="description" content="Live dashboards for the world's great cities: local time, weather, 7-day forecasts, air quality, news, earthquakes and live cams. Compare cities and get a free relocation plan.">
+<link rel="canonical" href="https://live.city/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Live.City"><meta property="og:title" content="Live.City — The World's Cities, Live: Time, Weather, Air Quality, News & Cams"><meta property="og:description" content="Live dashboards for the world's great cities: local time, weather, 7-day forecasts, air quality, news, earthquakes and live cams. Compare cities and get a free relocation plan."><meta property="og:url" content="https://live.city/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0f1e">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',JSON.parse(localStorage.getItem('lc_theme')||'"dark"'))}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="home">
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header id="site-header" class="hdr"><div class="wrap"><a class="logo" href="index.html"><span class="dot"></span><span>Live<b>.</b>City</span></a></div></header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="livepill">LIVE NOW</span>
+    <h1 style="margin-top:14px">Every great city.<br>Live, right now.</h1>
+    <p class="lead">Local time, weather, air quality, headlines, earthquakes and live cams for the world's top cities — on one screen, updating as you watch. Planning a move? We'll help you land.</p>
+    <div class="search hero-s" style="max-width:640px;margin:26px 0 8px"><input type="search" placeholder="Search Tokyo, Lisbon, Toronto…" aria-label="Search a city" style="height:56px;font-size:1.05rem"><div class="sugg" style="top:60px"></div></div>
+    <div class="chips" style="margin-top:12px"><a class="chip" href="city.html?c=new-york">New York</a><a class="chip" href="city.html?c=london">London</a><a class="chip" href="city.html?c=dubai">Dubai</a><a class="chip" href="city.html?c=tokyo">Tokyo</a><a class="chip" href="city.html?c=mumbai">Mumbai</a><a class="chip" href="city.html?c=toronto">Toronto</a></div>
+    <div class="clockstrip" id="clocks" aria-label="World clocks"></div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="grid g4">
+      <div class="card stat"><b id="st-day" class="">—</b><span>Tracked cities in daylight now</span></div>
+      <div class="card stat"><b id="st-q">—</b><span>Earthquakes recorded worldwide in the last 24h (USGS)</span></div>
+      <div class="card stat"><b id="st-hot">—</b><span id="st-hot-n">Warmest city right now</span></div>
+      <div class="card stat"><b id="st-cold">—</b><span id="st-cold-n">Coolest city right now</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+      <div><span class="kicker">● Live conditions</span><h2>Cities right now</h2></div>
+      <a class="btn alt sm" href="cities.html">All cities →</a>
+    </div>
+    <div class="grid g4" id="livegrid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band split">
+      <div>
+        <span class="kicker">Free relocation plan</span>
+        <h2>Moving to a new city? Get matched with trusted local help — free.</h2>
+        <ul class="checks"><li>Movers, rentals, home buying and mortgage contacts</li><li>Visa, schools, jobs and insurance guidance</li><li>One short form. No cost, no obligation.</li></ul>
+      </div>
+      <form id="rel-quick" class="card">
+        <label for="rel-to">Where are you moving?</label>
+        <select id="rel-to" aria-label="Destination city"></select>
+        <button class="btn red" style="width:100%;margin-top:14px">Start my free plan →</button>
+        <div class="trust"><span>🔒 Private</span><span>⏱ 60 seconds</span><span>💬 Reply in 1–2 days</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Tools</span><h2>Everything a city tells you, in one place</h2>
+    <div class="grid g3" style="margin-top:18px">
+      <a class="card citycard" href="live.html"><h3>🌍 Live world wall</h3><p class="muted">Every tracked city's clock, a live temperature map, today's earthquakes, the space station's position and a global news pulse.</p></a>
+      <a class="card citycard" href="compare.html"><h3>⚖️ Compare two cities</h3><p class="muted">Weather, air quality, daylight, time difference, distance and flight time side by side, with a link you can share.</p></a>
+      <a class="card citycard" href="cities.html"><h3>🏙️ City directory</h3><p class="muted">Filter by region, sort by temperature or clean air, save favourites and switch to a world map.</p></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:18px"><div><span class="kicker">Guides</span><h2>Read the city like a local</h2></div><a class="btn alt sm" href="guides/">All guides →</a></div>
+    <div class="grid g3">
+      <a class="card citycard" href="guides/relocation-checklist.html"><span class="badge">Relocation</span><h3 style="margin-top:10px">The 90-day city relocation checklist</h3><p class="muted small">What to do three months, one month and one week before you move.</p></a>
+      <a class="card citycard" href="guides/air-quality-index-explained.html"><span class="badge">Health</span><h3 style="margin-top:10px">How to read a city's air quality index</h3><p class="muted small">What AQI numbers mean, which pollutants matter and when to change plans.</p></a>
+      <a class="card citycard" href="guides/compare-cities-before-moving.html"><span class="badge">Data</span><h3 style="margin-top:10px">Compare cities before you move: a data-first method</h3><p class="muted small">A simple scoring model to pick your next city with numbers, not hype.</p></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid g3">
+    <div class="card"><span class="kicker">Contest</span><h3>City Lens photo contest</h3><p class="muted">Show us your city at its most alive. Monthly winners get prizes and homepage features.</p><a class="btn violet sm" href="contests.html">Enter the contest</a></div>
+    <div class="card"><span class="kicker">Advertise</span><h3>Put your business on the map</h3><p class="muted">Sponsor a city dashboard, get a featured listing, or receive qualified relocation leads.</p><a class="btn sm" href="advertise.html">See packages</a></div>
+    <div class="card"><span class="kicker">Support</span><h3>Keep Live.City free</h3><p class="muted">Donations fund servers, new cities, local contributors and contest prizes.</p><a class="btn red sm" href="support.html">Support us</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:860px">
+    <span class="kicker">FAQ</span><h2>Questions, answered</h2>
+    <details><summary>Where does the live data come from?</summary><p>Weather and air quality come from Open-Meteo's open forecast models, city overviews from Wikipedia, earthquakes from the U.S. Geological Survey, headlines from the GDELT Project and maps from OpenStreetMap. Data refreshes every few minutes in your browser and a snapshot is refreshed automatically every six hours.</p></details>
+    <details><summary>Is Live.City free?</summary><p>Yes. The site is supported by advertising, sponsorships and reader donations. The relocation plan is free for movers; partners pay us, not you.</p></details>
+    <details><summary>Can I rely on this for safety decisions?</summary><p>No. Live data can be delayed or incomplete. For storms, earthquakes, air-quality alerts or travel advisories, always follow your local authorities and official services.</p></details>
+    <details><summary>Can you add my city?</summary><p>Yes — we're adding cities every month. <a href="contact.html">Tell us which city</a> you want next, or <a href="advertise.html">sponsor its launch</a>.</p></details>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>

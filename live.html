@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live Now — World Clock Wall, Live Map, Earthquakes & Live Cams | Live.City</title>
+<meta name="description" content="What's happening in the world right now: every tracked city's local time, a live temperature map, today's earthquakes, the ISS position, live webcams and a global news pulse.">
+<link rel="canonical" href="https://live.city/live.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Live.City"><meta property="og:title" content="Live Now — World Clock Wall, Live Map, Earthquakes & Live Cams | Live.City"><meta property="og:description" content="What's happening in the world right now: every tracked city's local time, a live temperature map, today's earthquakes, the ISS position, live webcams and a global news pulse."><meta property="og:url" content="https://live.city/live.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0f1e">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',JSON.parse(localStorage.getItem('lc_theme')||'"dark"'))}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="live">
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header id="site-header" class="hdr"><div class="wrap"><a class="logo" href="index.html"><span class="dot"></span><span>Live<b>.</b>City</span></a></div></header>
+<main>
+<section class="hero" style="padding-bottom:20px">
+  <div class="wrap">
+    <span class="livepill">LIVE NOW</span>
+    <h1 style="margin-top:12px">The world, this minute</h1>
+    <p class="lead">Clocks for every city we track, ordered from the furthest ahead in time, plus live conditions, earthquakes and the International Space Station on one map.</p>
+    <div class="clockstrip" id="wall"></div>
+  </div>
+</section>
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div id="livemap" class="map" style="height:480px"></div>
+    <p class="small muted" style="margin-top:8px">Circles: city temperature (purple &lt;0° · cyan 0–10° · green 10–20° · amber 20–30° · red &gt;30°C). Red rings: M2.5+ earthquakes in the last 24h. 🛰️ ISS position updates every few seconds.</p>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card stat"><b id="qcount">—</b><span>M2.5+ earthquakes in the last 24 hours</span></div>
+      <div class="card stat"><b id="iss" style="font-size:1.2rem">—</b><span>International Space Station position &amp; speed</span></div>
+      <div class="card stat"><b>36</b><span>Cities tracked live — <a href="contact.html">request yours</a></span></div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap grid g2">
+    <div>
+      <h2>Featured live stream</h2>
+      <div class="facade" data-yt="https://www.youtube-nocookie.com/embed/live_stream?channel=UC6qrG3W8SMK0jior2olka3g" style="background-image:linear-gradient(135deg,#1b1347,#0c2a3a)"><div class="play">▶</div><div class="cap">EarthCam live network · click to play</div></div>
+      <p class="small muted" style="margin-top:8px">Streams are provided by their owners via YouTube and may be offline at times. <a href="https://www.youtube.com/results?search_query=city+live+cam&amp;sp=EgJAAQ%253D%253D" target="_blank" rel="noopener">Browse more live city cams →</a></p>
+    </div>
+    <div class="card"><h3>Latest earthquakes</h3><div id="qlist"><p class="muted">Loading USGS feed…</p></div></div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap grid g2">
+    <div class="card"><h3>Global city news pulse</h3><div id="pulse"><p class="muted">Loading headlines…</p></div></div>
+    <div class="card"><h3>Your city could be featured here</h3><p class="muted">The Live Now page is one of our most visited pages. Sponsor the live stream slot, add your city's official cam, or partner with us on an event broadcast.</p><a class="btn" href="advertise.html">Sponsorship options</a> <a class="btn alt" href="contact.html">Suggest a live cam</a></div>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>

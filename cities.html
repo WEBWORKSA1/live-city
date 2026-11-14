@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Cities Live — Weather, Time & Air Quality Directory | Live.City</title>
+<meta name="description" content="Browse live dashboards for 36 major world cities. Filter by region, sort by temperature or clean air, save favourites and view them on a live map.">
+<link rel="canonical" href="https://live.city/cities.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Live.City"><meta property="og:title" content="All Cities Live — Weather, Time & Air Quality Directory | Live.City"><meta property="og:description" content="Browse live dashboards for 36 major world cities. Filter by region, sort by temperature or clean air, save favourites and view them on a live map."><meta property="og:url" content="https://live.city/cities.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0f1e">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',JSON.parse(localStorage.getItem('lc_theme')||'"dark"'))}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="cities">
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header id="site-header" class="hdr"><div class="wrap"><a class="logo" href="index.html"><span class="dot"></span><span>Live<b>.</b>City</span></a></div></header>
+<main>
+<section class="hero" style="padding-bottom:20px">
+  <div class="wrap">
+    <span class="kicker">● City directory</span>
+    <h1>World cities, live</h1>
+    <p class="lead">Current temperature, conditions, local time and air quality for every city we track. Tap any city for its full live dashboard.</p>
+  </div>
+</section>
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="chips" id="regions" style="margin-bottom:14px">
+      <button class="chip on" data-r="All">All</button><button class="chip" data-r="Americas">Americas</button><button class="chip" data-r="Europe">Europe</button><button class="chip" data-r="Asia-Pacific">Asia-Pacific</button><button class="chip" data-r="Middle East &amp; Africa">Middle East &amp; Africa</button><button class="chip" data-r="fav">★ My cities</button>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px">
+      <input id="filter" type="search" placeholder="Filter by city or country" style="max-width:320px" aria-label="Filter cities">
+      <select id="sort" style="max-width:240px" aria-label="Sort cities"><option value="name">Sort: A–Z</option><option value="warm">Warmest first</option><option value="cool">Coolest first</option><option value="air">Cleanest air first</option><option value="time">Latest local time first</option></select>
+      <button class="btn alt sm" id="mapbtn">🗺 Map view</button>
+      <span class="muted small" id="count" style="margin-left:auto"></span>
+    </div>
+    <div id="citymap" class="map" style="display:none;margin-bottom:20px"></div>
+    <div class="grid g4" id="citygrid"></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="band split">
+      <div><h2>Don't see your city?</h2><p class="muted">We launch new city dashboards every month, prioritising the cities readers ask for and cities with a launch sponsor.</p></div>
+      <div><a class="btn" href="contact.html">Request a city</a> <a class="btn alt" href="advertise.html">Sponsor a city launch</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compare Cities Live — Weather, Air Quality, Time Difference & Distance | Live.City</title>
+<meta name="description" content="Compare any two cities side by side: current weather, 7-day highs and lows, air quality, daylight, time difference, distance and estimated flight time.">
+<link rel="canonical" href="https://live.city/compare.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Live.City"><meta property="og:title" content="Compare Cities Live — Weather, Air Quality, Time Difference & Distance | Live.City"><meta property="og:description" content="Compare any two cities side by side: current weather, 7-day highs and lows, air quality, daylight, time difference, distance and estimated flight time."><meta property="og:url" content="https://live.city/compare.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0f1e">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',JSON.parse(localStorage.getItem('lc_theme')||'"dark"'))}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="compare">
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header id="site-header" class="hdr"><div class="wrap"><a class="logo" href="index.html"><span class="dot"></span><span>Live<b>.</b>City</span></a></div></header>
+<main>
+<section class="hero" style="padding-bottom:20px">
+  <div class="wrap">
+    <span class="kicker">⚖ Compare</span>
+    <h1>City vs city, live</h1>
+    <p class="lead">Pick two cities to see how they stack up right now — and this week.</p>
+    <div class="card" style="margin-top:20px;display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end">
+      <div><label for="ca">City A</label><select id="ca"></select></div>
+      <button class="btn alt" id="swap" title="Swap cities" style="height:48px">⇄</button>
+      <div><label for="cb">City B</label><select id="cb"></select></div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div id="cmphead"></div>
+    <div class="card" style="margin-top:18px;overflow-x:auto"><table class="tbl" id="cmptbl"></table></div>
+    <div class="band split" style="margin-top:24px">
+      <div><h2>Thinking of moving to <span data-cmp-b>your new city</span>?</h2><p class="muted">Turn this comparison into a plan. Tell us about your move and we'll connect you with movers, rental and buying help, visa and school guidance.</p></div>
+      <div><a class="btn red" id="cmprel" href="relocate.html">Get my free relocation plan →</a></div>
+    </div>
+    <p class="small muted" style="margin-top:16px">Flight time is a rough estimate based on great-circle distance at typical cruising speed plus taxi and climb time; real schedules vary with routing and connections.</p>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>

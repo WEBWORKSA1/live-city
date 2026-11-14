@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>City Live Dashboard — Time, Weather, Air Quality, News | Live.City</title>
+<meta name="description" content="Live city dashboard: local time, current weather, 7-day forecast, air quality, sunrise and sunset, news, earthquakes and live cams.">
+<link rel="canonical" href="https://live.city/city.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Live.City"><meta property="og:title" content="City Live Dashboard — Time, Weather, Air Quality, News | Live.City"><meta property="og:description" content="Live city dashboard: local time, current weather, 7-day forecast, air quality, sunrise and sunset, news, earthquakes and live cams."><meta property="og:url" content="https://live.city/city.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0f1e">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',JSON.parse(localStorage.getItem('lc_theme')||'"dark"'))}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="city">
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header id="site-header" class="hdr"><div class="wrap"><a class="logo" href="index.html"><span class="dot"></span><span>Live<b>.</b>City</span></a></div></header>
+<main>
+<div class="cityhead">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> › <a href="cities.html">Cities</a> › <span data-city>City</span></div>
+    <div class="split" style="align-items:end">
+      <div>
+        <span class="livepill">LIVE</span>
+        <h1 id="cityname" style="margin:10px 0 4px">Loading…</h1>
+        <div class="muted" id="citycountry"></div>
+        <div class="bigclock" id="cityclock">--:--</div>
+        <div class="muted"><span id="citydate"></span> · <span id="citydiff"></span></div>
+        <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn alt sm" id="favbtn">☆ Save city</button><button class="btn alt sm" id="sharebtn">↗ Share</button><a class="btn alt sm" id="cmp" href="compare.html">⚖ Compare</a></div>
+      </div>
+      <div class="card">
+        <div class="wxnow"><span class="ic" id="wxic">⏳</span><div><div style="font-family:var(--head);font-size:2.6rem;font-weight:700" id="wxt">–</div><div id="wxd" class="muted">Fetching live weather…</div></div></div>
+        <p class="small muted" id="wxmore" style="margin:10px 0 0"></p>
+        <p class="small muted" id="upd" style="margin:4px 0 0"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="padding-top:24px">
+  <div class="wrap grid g2">
+    <div class="card"><h3>7-day forecast</h3><div class="fc" id="fc"></div><svg class="spark" id="spark" viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true"></svg><div class="small muted" id="sparklbl"></div></div>
+    <div class="card">
+      <h3>Air quality now</h3>
+      <div style="display:flex;align-items:center;gap:14px"><b id="aqiv" style="font-family:var(--head);font-size:2.6rem">–</b><span id="aqil" class="badge">…</span></div>
+      <p id="aqia" class="muted" style="margin-top:8px"></p><p id="aqip" class="small"></p>
+      <div class="grid g4" style="margin-top:10px">
+        <div class="stat"><b id="sunr" style="font-size:1.2rem">–</b><span>Sunrise</span></div>
+        <div class="stat"><b id="suns" style="font-size:1.2rem">–</b><span>Sunset</span></div>
+        <div class="stat"><b id="dayl" style="font-size:1.2rem">–</b><span>Daylight</span></div>
+        <div class="stat"><b id="uv" style="font-size:1.2rem">–</b><span>Max UV</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="band split">
+      <div><span class="kicker">Moving to <span data-city>this city</span>?</span><h2>Get a free relocation plan for <span data-city>this city</span></h2><p class="muted">Movers, rentals, buying, mortgages, visas, schools and jobs — matched to your move in one short form.</p></div>
+      <div><a class="btn red rel-link" href="relocate.html">Start my free plan →</a><div class="trust"><span>Free</span><span>No obligation</span><span>Private</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap grid g2">
+    <div class="card"><h3>About <span data-city>the city</span></h3><p id="citydesc"></p><h4>Highlights</h4><ul class="checks" id="cityhl"></ul><p><b>Best time to visit:</b> <span id="citybt"></span></p><table class="tbl small" id="cityfacts"></table></div>
+    <div class="card"><h3>Overview</h3><div id="wiki"><p class="skeleton">Loading overview text from Wikipedia…</p></div></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap grid g2">
+    <div class="card"><h3>Latest headlines</h3><div id="news"><p class="muted">Loading live news…</p></div></div>
+    <div class="card"><h3>Live cams &amp; videos</h3><p class="muted">Watch <span data-city>the city</span> in real time through public live streams and webcams.</p><div id="camlinks" style="display:flex;gap:8px;flex-wrap:wrap"></div><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h3>Seismic activity</h3><p id="quakes" class="muted">Checking USGS feed…</p></div>
+  </div>
+</section>
+
+<section style="padding-top:0"><div class="wrap"><div id="citymap" class="map"></div></div></section>
+
+<section style="padding-top:0">
+  <div class="wrap grid g2">
+    <div class="sponsor"><b>This city dashboard is available for sponsorship.</b><br>Reach people checking <span data-city>this city</span> every day. <a href="advertise.html">Become the presenting sponsor →</a></div>
+    <div class="sponsor"><b>Do business in <span data-city>this city</span>?</b><br>Get a featured listing or receive relocation leads. <a class="biz-link" href="advertise.html#partner">Apply as a local partner →</a></div>
+  </div>
+</section>
+
+<section style="padding-top:0"><div class="wrap"><h2>Nearby cities</h2><div class="grid g4" id="nearby"></div></div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>
